@@ -1,0 +1,171 @@
+.mainContactUs {
+    background-color: rgb(237, 233, 233);
+    margin-top: 2rem;
+    width: 100%;
+    height:87vh;
+    height: 100%;
+}
+
+.innerTitleContactUs {
+    margin: 0;
+    margin-bottom: 2rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    padding-left: 10%;
+}
+
+.contactUsBox {
+    margin-top: 4rem;
+    margin-left: 3rem;
+    background-color: white;
+    padding: 4rem;
+    width: 190vh;
+    height: 84vh;
+}
+
+
+.contactUsBox .address {
+    font-size: x-large;
+    margin: 2rem auto;
+}
+
+.contactUsBox .phone {
+    font-size: x-large;
+    margin: 2rem auto;
+}
+
+.contactUsBox .email {
+    font-size: x-large;
+    margin: 2rem auto;
+}
+
+.contactUsBox .button {
+    font-size: large;
+    background-color: black;
+    border: 1px black solid;
+    border-radius: 3px;
+    margin-left: 8rem;
+}
+
+.contactUsBox .button:hover {
+    background-color: rgb(87, 87, 87);
+    border: 1px rgb(87, 87, 87) solid;
+}
+
+.iconContactUs {
+    margin-left: 7rem;
+    padding: 2rem;
+    display: flex;
+    flex-flow:row;
+    font-size: 2.5rem;
+}
+
+.iconContactUs a {
+    color: black;
+}
+
+.map-container {
+position:absolute;
+right: 70px;
+top: 3950px;
+margin-left: 860px;
+}
+
+
+@media screen and (max-width:940px) {
+    .mainContactUs {
+        margin-top: 2rem;
+        width: 100%;
+        height: 0vh;
+    }
+
+    .map-container div {
+        display: none;
+      }
+    
+    .innerTitleContactUs {
+        margin: 0;
+        margin-bottom: 2rem;
+        background-color: rgb(255, 255, 255);
+        color: white;
+        font-size: 3rem;
+        font-weight: 600;
+        padding-left: 10%;
+    }
+    
+    .contactUsBox {
+        display: grid;
+        grid: template columns 1px;
+        height: 40rem;
+    }
+    
+    
+    .contactUsBox .address {
+        font-size: medium;
+        margin: 0rem;
+    }
+    
+    .contactUsBox .phone {
+        font-size: medium;
+        margin: 0rem;
+    }
+    
+    .contactUsBox .email {
+        font-size: medium;
+        margin: 0rem;
+    }
+    
+    .contactUsBox .button {
+        font-size: small;
+        text-align: center;
+        margin-top: 2rem;
+        margin-left: 3rem;
+        width: 10rem;
+        height: 3rem;
+    }
+      
+    .iconContactUs {
+        margin-left: 2rem;
+        font-size: 40px;
+    } 
+}
+
+@media screen and (max-width:2100px) {
+    .innerTitleContactUs {
+        margin: 0;
+        margin-bottom: 2rem;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        font-weight: 600;
+        padding-left: 10%;
+    }
+    .map-container {
+        position:relative;
+        top: -420px;
+        }
+
+    .map-container div {
+          height: 500px !important;
+          width: 800px !important
+        }
+
+        .contactUsBox {
+            margin-top: 4rem;
+            margin-left: 3rem;
+            background-color: white;
+            padding: 4rem;
+            width: 90%;
+            height: 63vh;
+        }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+    .contactUsBox {
+        height: 100vh;
+    }
+
+} 

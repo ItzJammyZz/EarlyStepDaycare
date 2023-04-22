@@ -1,0 +1,64 @@
+For Server-Side with using Google Cloud Functions or AWS Lambda as a serverless function. 
+https://cloud.google.com/docs/get-started
+If we got budget and want to improve and make website bigger, we can do that.
+
+To get started:
+To send the form data to an email address when the user clicks the submit button, you'll need to use a server-side technology to handle the form submission. One approach is to use a serverless function such as AWS Lambda or Google Cloud Functions to receive the form data, format it into an email, and send it to the desired email address.
+
+Here's an example using AWS Lambda and the nodemailer package to send the email:
+
+const nodemailer = require('nodemailer');
+exports.handler = async (event) => {
+  const { name, email, subject, message } = JSON.parse(event.body);
+
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.example.com',
+    port: 587,
+    auth: {
+      user: 'username',
+      pass: 'password',
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: 'Contact@earlystepsdaycare.co.uk',
+    subject: `Message from ${name}: ${subject}`,
+    text: message,
+  };
+
+  try {
+    await transporter.sendMail(mailOptions);
+    return {
+      statusCode: 200,
+      body: 'Message sent successfully',
+    };
+  } catch (error) {
+    console.log(error);
+    return {
+      statusCode: 500,
+      body: 'Error sending message',
+    };
+  }
+};
+
+
+In this example, the Lambda function is triggered when the form is submitted and the form data is extracted from the event.body property. The nodemailer package is used to create a SMTP transport and send the email to the desired email address.
+
+To connect your React app to the Lambda function, you can use the fetch() function to make a POST request to the Lambda function endpoint, passing in the form data as JSON in the request body. Here's an example of the handleSubmit function modified to make the API request:
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  fetch('/api/send-email', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ name, email, subject, message }),
+  })
+    .then((response) => response.json())
+    .then((data) => console.log(data))
+    .catch((error) => console.log(error));
+};
+
+Note that the fetch() function is making a request to the /api/send-email endpoint, which should be configured to trigger the Lambda function. The endpoint can be set up using a serverless framework such as Serverless or SAM.
