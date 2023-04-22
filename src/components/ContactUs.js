@@ -28,7 +28,6 @@ export default function ContactUs() {
 
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-    // googleMapsApiKey: 'AIzaSyByvnfL2QWXxAjAPB5EctB19mHqZEgHtHA'
   })
 
   useEffect(() => {
