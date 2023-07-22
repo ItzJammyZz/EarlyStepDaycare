@@ -5,7 +5,7 @@ import './Jobs.css'
 
 const Jobs = () => {
   const [jobListings, setJobListings] = useState([]);
-  const [hasJobListings, setHasJobListings] = useState(false);
+  const [hasJobListings, setHasJobListings] = useState(true);
 
   function addJobListings() {
     // For this example, we'll assume that there are no job listings available

@@ -22,7 +22,21 @@ const closeMenu = () => setClick(false)
             </div>
             
               <ul className={click ? "nav-menu active" : "nav-menu"}>
+              <li className='nav-item'>
+                 <a href='/'><strong>Home</strong></a>
+                </li>
                 <li className='nav-item'>
+                 <a href='/about'><strong>About Us</strong></a>
+                </li>
+                <li className='nav-item'>
+                 <a href='/jobs'><strong>Jobs</strong></a>
+                </li>
+                <li className='nav-item'>
+                 <a href='/contact'><strong>Contact Us</strong></a>
+                </li>
+
+
+                {/* <li className='nav-item'>
                  <Link to="cover" spy={true} smooth={true} offset={0} duration={400} onClick={closeMenu}><strong>Home</strong></Link>
                 </li>
                 <li className='nav-item'>
@@ -33,7 +47,7 @@ const closeMenu = () => setClick(false)
                 </li>
                 <li className='nav-item'>
                 <Link to="contact" spy={true} smooth={true} offset={-90} duration={400} onClick={closeMenu}><strong>Contact Us</strong></Link>
-                </li>
+                </li> */}
                 {/* <li className='nav-item'>
                  <a href='/'>Our Policies and Procedures</a>
                 </li> */}

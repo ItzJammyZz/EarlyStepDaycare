@@ -6,9 +6,11 @@
 
 .aboutImg img {
     position: relative;
-    margin-top: 6rem;
-    height: 850px;
-    min-width: 800px;
+    margin-top: 4rem;
+    /* height: 850px; */
+    height: 85%;
+    /* min-width: 800px; */
+    width: 85%;
 }
 
 .innertitleAbout {

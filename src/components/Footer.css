@@ -46,7 +46,7 @@ flex-direction: column;
 
 @media screen and (max-width:2100px) {
   .Footer {
-    height: 26vh;
+    height: 34vh;
   }
 
   .Footer_Icon a {

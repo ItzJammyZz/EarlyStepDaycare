@@ -74,22 +74,30 @@
       .nav-menu {
         position: fixed;
         left: -100%;
-        top: 90px;
+        top: 80px;
         flex-direction: column;
         background-color: rgba(214, 210, 210, 0.9);
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         z-index: 999;
         text-align: center;
-        transition: .3s;
+        text-overflow: clip;
+        transition: .6s;
       }
 
       .nav-menu.active {
         left: 0;
       }
 
+
+      .nav-menu.active .nav-item a:hover {
+        color: rgb(70, 47, 60);
+        font-size: x-large;
+        cursor: pointer;
+      }
+
       .nav-item {
-        margin: 1.5rem 0;
+        margin: 0.9rem 0;
       }
 
       .header .navbar img {

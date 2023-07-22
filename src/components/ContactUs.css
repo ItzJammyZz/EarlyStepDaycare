@@ -132,7 +132,8 @@ margin-left: 860px;
     } 
 }
 
-@media screen and (max-width:2100px) {
+/* This is for larger screen or monitor */
+@media screen and (max-width:2100px) { 
     .innerTitleContactUs {
         margin: 0;
         margin-bottom: 2rem;
@@ -143,12 +144,13 @@ margin-left: 860px;
         padding-left: 10%;
     }
     .map-container {
-        position:relative;
+        position:relative !important;
         top: -420px;
         }
 
-    .map-container div {
-          height: 500px !important;
+    .map-container div:first-child {
+        position: relative !important;
+          height: 550px !important;
           width: 800px !important
         }
 
@@ -162,10 +164,48 @@ margin-left: 860px;
         }
 }
 
+/* This is for normal view i.e. laptop or desktop view */
+@media screen and (max-width:1600px) {
+    .innerTitleContactUs {
+        margin: 0;
+        margin-bottom: 2rem;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-size: 3rem;
+        font-weight: 600;
+        padding-left: 10%;
+    }
+    .map-container {
+        position:relative !important;
+        top: -420px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+          height: 400px !important;
+          width: 500px !important
+        }
+
+        .contactUsBox {
+            margin-top: 4rem;
+            margin-left: 3rem;
+            background-color: white;
+            padding: 4rem;
+            width: 90%;
+            height: 63vh;
+        }
+}
+
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 900px) {
     .contactUsBox {
         height: 100vh;
     }
+
+    .map-container {
+        position: absolute !important;
+    }
+    
 
 } 
