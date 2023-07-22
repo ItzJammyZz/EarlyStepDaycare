@@ -5,7 +5,7 @@ import './Jobs.css'
 
 const Jobs = () => {
   const [jobListings, setJobListings] = useState([]);
-  const [hasJobListings, setHasJobListings] = useState(true);
+  const [hasJobListings, setHasJobListings] = useState(false);
 
   function addJobListings() {
     // For this example, we'll assume that there are no job listings available
@@ -24,27 +24,20 @@ const Jobs = () => {
     Jobs
       </div>
       <div className='container'>
-        <h2>We're Hiring</h2>
+        <h2>Please check back later!</h2>
         <span className='line'></span>
         <div className='content' style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
           {hasJobListings ? (
             <div className='card'>
-              <img src={sample} alt='sample'/>
+              {/* <img src={sample} alt='sample'/> */}
               <p>Nursery Manager</p>
               <p><span>£25,000 - £27,500</span></p>
               <p>Flexible</p>
               <button className='jobButton'><a href='https://uk.indeed.com/viewjob?jk=7f86b6a4f04d2e3b'>Apply here</a>
               <p className='tooltiptext'>Indeed.com</p>
               </button>  
-              <img src={sample} alt='sample'/>
+              {/* <img src={sample} alt='sample'/> */}
               <p>Nursery Assistant Manager</p>
-              <p><span>£25,000 - £27,500</span></p>
-              <p>Flexible</p>
-              <button className='jobButton'><a href='https://uk.indeed.com/viewjob?jk=7f86b6a4f04d2e3b'>Apply here</a>
-              <p className='tooltiptext'>Indeed.com</p>
-              </button> 
-              <img src={sample} alt='sample'/>
-              <p>Nursery Staff</p>
               <p><span>£25,000 - £27,500</span></p>
               <p>Flexible</p>
               <button className='jobButton'><a href='https://uk.indeed.com/viewjob?jk=7f86b6a4f04d2e3b'>Apply here</a>
@@ -52,7 +45,8 @@ const Jobs = () => {
               </button> 
             </div>
           ) : (
-            <p className='no-jobs-message'>Sorry, there are no job listings available at this time. Please come back later.</p>
+            <p className='no-jobs-message'>As we are nearing our completion for Ofsted registration, we are looking to hire wonderful childcare professionals to become part of our Early Steps family… 
+            </p>
           )}
         </div>
       </div>
