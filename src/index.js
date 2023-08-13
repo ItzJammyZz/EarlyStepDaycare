@@ -10,6 +10,7 @@ import ErrorPage from './ErrorPage';
 import Footer from './components/Footer';
 import Jobs from './components/Jobs';
 import ContactUs from './components/ContactUs';
+import Gallery from './components/Gallery';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     path: "/jobs",
     element: [<Navbar/>,<Jobs/>,<Footer/>]
   },
+  // {
+  //   path: "/gallery",
+  //   element: [<Navbar/>,<Gallery/>,<Footer/>]
+  // },
   {
     path: "/contact",
     element: [<Navbar/>, <ContactUs/>,<Footer/>]

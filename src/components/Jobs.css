@@ -1,11 +1,6 @@
-.jobsAds .container {
-    width: 1240px;
-    margin: 0rem auto;
-    padding: 4rem 0rem;
-}
-
-.innertitleJob {
+.innertitleJobs {
     margin: 0;
+    width: 100%;
     margin-top: 5.6rem;
     margin-bottom: 2rem;
     background-color: rgb(238, 40, 40);
@@ -13,23 +8,34 @@
     font-size: 3rem;
     font-weight: 600;
     padding-left: 10%;
+    margin-right: 0;
+
 }
 
-.jobsAds {
-    content: '';
 
+.jobsAds .container {
+    /* width: 1240px; */
+    width: 100%;
+    height: 100%;
+    /* margin: 0rem auto; */
+    padding: 4rem 0rem;
+}
+
+/* .jobsAds {
+    content: '';
     height: 100vh;
     width: 100%;
     position: static;
     z-index: -1;
-}
+} */
 
 .jobsAds h2 {
     font-size: 3rem;
     text-align: center;
+    margin-bottom: rem;
 }
 
-.no-jobs-message {
+/* .no-jobs-message {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,27 +47,73 @@
     background-color:rgba(255, 255, 255, 0.864);
     border: solid black 2px;
     border-radius: 5px;
-  }
+  } */
 
 
 .jobsAds .container .content {
-    display: grid;
-    grid-template-columns: repeat(5,1fr); /* Decrease the 5 to 3 depending on how many cards you put there */
-    grid-gap: 10px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(5,1fr); Decrease the 5 to 3 depending on how many cards you put there */
+    /* grid-gap: 10px; */
     margin: 2rem 0;
 }
 
-.jobsAds .card {
+.jobsAds .card-main {
     border: 2px solid #060606;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10 px rgb(0,0,0, .2);
+    padding: 5rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: 60%; */
+    margin-left: 3rem;
+    width: 95%;
+    height: 30%;
+    /* width: 130vh;  */
+
+}
+
+.jobsAds .card-1a, .card-2a {
+    color: #ff000d;
+    margin-top: 2rem;
+    font-size: medium;
+}
+
+
+
+.jobsAds .card-1 {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2rem;
+    font-size: larger;
+    border: 2px solid #0022ff;
     border-radius: 8px;
     box-shadow: 0 3px 10 px rgb(0,0,0, .2);
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.9);
-    display: flex;
-    flex-flow:column;
-    align-items: center;
     height: 60vh;
-    width: 100vh;
+    width: 50vh;
+}
+
+.jobsAds .card-2 {
+    margin-top: 2rem;
+    text-align: center;
+    border: 2px solid #6aff00;
+    font-size: larger;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 600;
+    border-radius: 8px;
+    box-shadow: 0 3px 10 px rgb(0,0,0, .2);
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 60vh;
+    width: 50vh;
 }
 
 .jobsAds .card img {
@@ -123,10 +175,27 @@
   @media screen and (max-width: 940px) {
     .jobsAds .container {
         width: 100%;
+        height: 100%;
     }
 
+
+    .jobsAds .card-main {
+        margin-bottom: -2rem;
+        border-radius: 8px;
+        box-shadow: 0 3px 10 px rgb(0,0,0, .2);
+        padding: 5rem;
+        background-color: rgba(255, 255, 255, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: 60%; */
+        margin-left: 3rem;
+        width: 90%;
+        height: 30%;
+        /* width: 130vh;  */
+    }
     .jobsAds .container .content {
-        grid-template-columns: 1fr;
+        grid-template-columns: 3fr;
     }
 
     .jobsAds {
@@ -177,5 +246,8 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    .jobsAds .container {
+        width: 100%;
+        height: 100%;
+    }
 } 

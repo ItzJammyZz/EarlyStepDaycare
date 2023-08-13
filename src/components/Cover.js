@@ -9,9 +9,10 @@ const Cover = () => {
   return (
     <div className='cover' id='cover'>
       <div className='content'>
-        <p>Catchy phrase </p>
-        <p>Convincing point about sending children here</p>
-        <p>Then reeling them in with the final notes</p>
+        <p>Welcome to </p>
+        <p>Early Steps™</p>
+        <p>Daycare</p>
+        <p>For any questions or enquiries, please email us below</p>
         <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className='button'>Email Now</a>
       </div>
     </div>

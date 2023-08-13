@@ -63,13 +63,13 @@ export default function ContactUs() {
       <div className='contactUsBox'>
         <h2>Contact Us</h2>
         <p className='address'><strong>Address:</strong> 47 Hobsons Place, Woodseer St, E1 5HH </p>
-        <p className='phone'><strong>Phone:</strong> (555) 555-1234</p>
+        {/* <p className='phone'><strong>Phone:</strong> (555) 555-1234</p> */}
         <p className='email'><strong>Email:</strong> Contact@earlystepsdaycare.co.uk</p>
         <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className='button'>Email Now</a>
         <div className='iconContactUs'>
           <a href='https://www.instagram.com/earlysteps_daycare/'>< FaInstagram /></a>
-          <a href=''>< FaTwitterSquare/></a>
-          <a href=''>< FaFacebookSquare/></a>
+          {/* <a href=''>< FaTwitterSquare/></a>
+          <a href=''>< FaFacebookSquare/></a> */}
         </div>
         <div className='map-container'>
         <GoogleMap

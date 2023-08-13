@@ -13,10 +13,10 @@ function Footer() {
             </div>
             <div className='creator'>
                 Created by Jameel Anwar
-            <div className='Footer_Icon'>
+            {/* <div className='Footer_Icon'>
             <a href='https://jameelanwar.com/'>< FaDesktop/></a>
             <h6>Visit My Website</h6>
-            </div>
+            </div> */}
             </div>
         </div>
     )

@@ -31,6 +31,9 @@ const closeMenu = () => setClick(false)
                 <li className='nav-item'>
                  <a href='/jobs'><strong>Jobs</strong></a>
                 </li>
+                {/* <li className='nav-item'>
+                 <a href='/gallery'><strong>Gallery</strong></a>
+                </li> */}
                 <li className='nav-item'>
                  <a href='/contact'><strong>Contact Us</strong></a>
                 </li>

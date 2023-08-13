@@ -6,23 +6,27 @@
     flex-wrap: wrap;
     margin-top: 0rem;
     align-items: center; 
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(214, 210, 210, 0.9);
     z-index: 100;
     justify-content:space-between
   }
 
   .Footer-col2 p {
-    color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    margin-left: 3rem;
   }
 
   .creator {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-right: 2rem;
+    font-weight: 300;
     text-align: center;
   }
 
   .creator h6 {
     font-style: bold;
+    font-weight: 800;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
 
@@ -32,7 +36,8 @@ flex-direction: column;
   }
 
   .Footer_Icon a {
-    color: white;
+    color: rgb(0, 0, 0);
+    border-bottom: solid black 0.25px;
     font-size: large;
     opacity: 0.7;
     margin-bottom: 1rem;
@@ -53,9 +58,9 @@ flex-direction: column;
   .Footer_Icon a {
     font-size: large;
   }
-  .Footer-col2 p {
+  /* .Footer-col2 p {
     font-size: large;
-  }
+  } */
   .creator {
     font-size: large;
     margin-right: 2rem;

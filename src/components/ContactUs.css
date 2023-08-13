@@ -16,13 +16,17 @@
     padding-left: 10%;
 }
 
+/* 0, 30, 255 */
+/* 238, 244, 69 */
 .contactUsBox {
     margin-top: 4rem;
     margin-left: 3rem;
     background-color: white;
     padding: 4rem;
-    width: 190vh;
-    height: 89vh;
+    /* width: 190vh; */
+    width: 95%;
+    /* height: 89vh; */
+    height: 50%;
 }
 
 
@@ -46,7 +50,7 @@
     background-color: black;
     border: 1px black solid;
     border-radius: 3px;
-    margin-left: 8rem;
+    margin-left: 10rem;
 }
 
 .contactUsBox .button:hover {
@@ -55,7 +59,7 @@
 }
 
 .iconContactUs {
-    margin-left: 7rem;
+    margin-left: 12rem;
     padding: 2rem;
     display: flex;
     flex-flow:row;
@@ -145,7 +149,7 @@ margin-left: 860px;
     } */
     .map-container {
         position:relative !important;
-        top: -420px;
+        top: -350px;
         }
 
     .map-container div:first-child {
@@ -177,7 +181,7 @@ margin-left: 860px;
     } */
     .map-container {
         position:relative !important;
-        top: -420px;
+        top: -360px;
         }
 
     .map-container div:first-child {
@@ -187,12 +191,13 @@ margin-left: 860px;
         }
 
         .contactUsBox {
-            margin-top: 4rem;
-            margin-left: 3rem;
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+            margin-left: 4rem;
             background-color: white;
             padding: 4rem;
-            width: 90%;
-            height: 63vh;
+            width: 92%;
+            /* height: 63vh; */
         }
 }
 

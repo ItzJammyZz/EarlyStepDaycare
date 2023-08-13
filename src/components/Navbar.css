@@ -28,7 +28,26 @@
 }
 
 .header .nav-menu a {
-    color: #000000;
+    color: rgb(24, 150, 12);
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px 0 #585555, 2px 1px 0 #585555, 2px 2px 0 #585555, 2px 1px 0 #585555
+}
+
+.header .nav-menu a[href*="about"] {
+  color: rgb(0, 30, 255);
+}
+
+.header .nav-menu a[href*="/jobs"] {
+  color: rgb(238, 40, 40);
+}
+
+.header .nav-menu a[href*="/gallery"] {
+  color: rgb(200, 0, 255);
+}
+
+.header .nav-menu a[href*="/contact"] {
+  color: rgb(238, 244, 69);
 }
 
 .header .nav-menu {
