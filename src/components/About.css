@@ -17,6 +17,8 @@
     margin: 0;
     margin-bottom: 2rem;
     background-color: rgb(0, 30, 255);
+    border: rgb(237, 233, 233) solid 10px;
+    border-radius: 20px;
     color: white;
     font-size: 3rem;
     font-weight: 600;
@@ -25,10 +27,12 @@
 /* 0, 30, 255 */
 /* 24, 150, 12 */
 .about .container {
+    height: 100%;
     width: 95%;
+    border: black solid 2px;
+    border-radius: 8px;
     margin-top: 2rem;
     margin-left: 3rem;
-    height: 100%;
     display: grid;
     grid-template-columns: auto auto;
     background-color: white;
@@ -129,15 +133,18 @@
     }
 }
 
-@media screen and (max-width:2100px) {
-    .aboutImg img {
-        height: 700px;
-    }
-
-
-}
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (max-width: 500px) {
+    .about {
+        margin-bottom: 3rem;
+    }
     
 } 
+
+@media only screen and (max-width: 300px) {
+    .about .container .col-2 {
+        padding: 0;
+    }
+
+}

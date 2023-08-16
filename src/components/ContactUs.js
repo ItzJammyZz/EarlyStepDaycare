@@ -22,8 +22,10 @@ const mapStyles = [
 
 export default function ContactUs() {
   const [mapContainerStyle, setMapContainerStyle] = useState({
-    width: "1450px",
-    height: "950px"
+    // width: "1450px",
+    // height: "950px"
+    width: "100%",
+    height: "100%"
   });
 
   const { isLoaded } = useLoadScript({
@@ -35,13 +37,13 @@ export default function ContactUs() {
       const screenWidth = window.innerWidth;
       if (screenWidth <= 940) {
         setMapContainerStyle({
-          width: `${screenWidth - 20}px`,
-          height: "300px"
+          width: `${screenWidth - 20}%`,
+          height: "50%"
         });
       } else {
         setMapContainerStyle({
-          width: "1450px",
-          height: "800px"
+          width: "100%",
+          height: "100%"
         });
       }
     } 
@@ -68,8 +70,8 @@ export default function ContactUs() {
         <a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className='button'>Email Now</a>
         <div className='iconContactUs'>
           <a href='https://www.instagram.com/earlysteps_daycare/'>< FaInstagram /></a>
-          {/* <a href=''>< FaTwitterSquare/></a>
-          <a href=''>< FaFacebookSquare/></a> */}
+          <a href='https://x.com/earlystepsdcare?s=11&t=XgxLi9cN0VBRn9seAql5Yg'>< FaTwitterSquare/></a>
+          <a href='https://www.facebook.com/profile.php?id=100095376022429'>< FaFacebookSquare/></a>
         </div>
         <div className='map-container'>
         <GoogleMap

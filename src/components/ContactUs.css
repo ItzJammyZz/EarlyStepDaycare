@@ -2,12 +2,13 @@
     background-color: rgb(237, 233, 233);
     margin-top: 5.6rem;
     width: 100%;
-    height:87vh;
     height: 100%;
 }
 
 .innerTitleContactUs {
     background-color: rgb(238, 244, 69);
+    border: rgb(237, 233, 233) solid 10px;
+    border-radius: 20px;
     margin: 0;
     margin-bottom: 2rem;
     color: white;
@@ -20,12 +21,12 @@
 /* 238, 244, 69 */
 .contactUsBox {
     margin-top: 4rem;
+    border: black solid 2px;
+    border-radius: 8px;
     margin-left: 3rem;
     background-color: white;
     padding: 4rem;
-    /* width: 190vh; */
     width: 95%;
-    /* height: 89vh; */
     height: 50%;
 }
 
@@ -80,13 +81,15 @@ margin-left: 860px;
 
 @media screen and (max-width:940px) {
     .mainContactUs {
-        margin-top: 2rem;
-        width: 100%;
-        height: 0vh;
+        max-height: 100%;
+        /* margin-top: 2rem; */
+        /* width: 100%;
+        height: 100%; */
     }
 
     .map-container div {
         display: none;
+        position: fixed;
       }
     
     /* .innerTitleContactUs {
@@ -100,9 +103,9 @@ margin-left: 860px;
     } */
     
     .contactUsBox {
-        display: grid;
+        /* display: grid; */
         grid: template columns 1px;
-        height: 40rem;
+        /* height: 100%; */
     }
     
     
@@ -119,6 +122,7 @@ margin-left: 860px;
     .contactUsBox .email {
         font-size: medium;
         margin: 0rem;
+        margin-bottom: 2rem;
     }
     
     .contactUsBox .button {
@@ -137,7 +141,7 @@ margin-left: 860px;
 }
 
 /* This is for larger screen or monitor */
-@media screen and (max-width:2100px) { 
+@media screen and (max-width:2100px) and (min-width: 1800px) { 
     /* .innerTitleContactUs {
         margin: 0;
         margin-bottom: 2rem;
@@ -168,17 +172,75 @@ margin-left: 860px;
         } */
 }
 
+@media screen and (max-width:2400px) and (min-width: 2100px) { 
+
+    .map-container {
+        position:relative !important;
+        top: -300px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+          height: 550px !important;
+          width: 100% !important
+        }
+}
+
+@media screen and (max-width:3000px) and (min-width: 2400px) { 
+
+    .contactUsBox {
+        height: 80vh;
+    }
+
+    .map-container {
+        position:relative !important;
+        top: -300px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+          height: 550px !important;
+          width: 100% !important
+        }
+}
+
+@media screen and (max-width:4000px) and (min-width: 3000px) { 
+
+    .contactUsBox {
+        height: 90vh;
+    }
+
+    .map-container {
+        position:relative !important;
+        top: -300px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+          height: 550px !important;
+          max-width: 100% !important
+        }
+}
+
+
+@media screen and (max-width:1750px) {
+
+    .map-container {
+        position:relative !important;
+        top: -350px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+        height: 50vh !important;
+        width: 110%!important
+        }
+
+}
+
 /* This is for normal view i.e. laptop or desktop view */
 @media screen and (max-width:1600px) {
-    /* .innerTitleContactUs {
-        margin: 0;
-        margin-bottom: 2rem;
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        font-size: 3rem;
-        font-weight: 600;
-        padding-left: 10%;
-    } */
+
     .map-container {
         position:relative !important;
         top: -360px;
@@ -204,13 +266,281 @@ margin-left: 860px;
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 900px) {
-    .contactUsBox {
-        height: 100vh;
-    }
 
-    .map-container {
-        position: absolute !important;
+
+    .contactUsBox {
+        /* height: 10vh; */
+        width: 80%;
     }
     
 
+    .map-container {
+        display: none;
+        /* position: absolute !important; */
+    }
+} 
+
+@media only screen and (max-width: 500px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        width: 96%;
+        height: 63vh;
+    }
+    .map-container {
+        display: none;
+        }
+
+        .iconContactUs {
+            margin-left: 1.5rem;
+        }
+
+  } 
+
+  @media only screen and (max-width: 420px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        max-height: 90%;
+        width: 96%;
+        /* height: 70vh; */
+    }
+    .map-container {
+        display: none;
+        }
+
+        .iconContactUs {
+            margin-left: 1.5rem;
+        }
+
+  } 
+
+
+  @media only screen and (max-width: 950px) {
+        .iconContactUs {
+            margin-left: 1.5rem;
+        }
+
+        .mainContactUs {
+                max-height: 100%;
+        }
+
+        .contactUsBox {
+            margin-left: 1rem;
+            width: 96%;
+            height: 80vh;
+            /* max-height: 100%; */
+
+        }    
+  } 
+
+  @media only screen and (max-width: 300px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+
+        .iconContactUs {
+            margin-left: 0rem;
+            font-size: larger;
+        }
+
+        .contactUsBox .address {
+            font-size: small;
+            margin: 0rem;
+        }
+        
+        .contactUsBox .phone {
+            font-size: small;
+            margin: 0rem;
+        }
+        
+        .contactUsBox .email {
+            font-size: small;
+            margin: 0rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contactUsBox .button {
+            font-size: small;
+            text-align: center;
+            margin-top: 2rem;
+            margin-left: 0rem;
+            width: 10rem;
+            height: 3rem;
+        }
+
+  } 
+
+  @media only screen and (max-width: 1500px) and (min-width: 1350px) { /* This is where I changed the layouts, you might need to edit this part out*/
+    .contactUsBox {
+        width: 90%;   
+    }
+
+    .contactUsBox {
+        height: 60vh;
+    }
+    
+    .map-container {
+        /* display: none; */
+    }
+
+    .map-container div:first-child {
+        position: absolute !important;
+          height: 40vh !important;
+          width: 35vw!important;
+          left: -180px
+        }
+} 
+
+@media only screen and (max-width: 1300px) and (min-width: 1200px) {
+    .contactUsBox {
+        width: 90%;
+        height: auto;      
+    }
+    
+    .map-container {
+        position:relative !important;
+        top: -360px;
+        left: -300px;
+        }
+
+    .map-container div:first-child {
+        position: relative !important;
+          height: 60vh !important;
+          width: 30vw !important
+        }
+} 
+
+/* @media only screen and (max-height: 1000px) and (min-height:900px ){
+
+    .contactUsBox {
+        height: 59vh;
+    }
+
+} */
+
+
+@media only screen and (max-width: 300px) and (min-width: 220px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 0rem;
+        width: 100%;
+    }
+
+        .iconContactUs {
+            margin-left: 0rem;
+            font-size: larger;
+        }
+
+        .contactUsBox .address {
+            font-size: small;
+            margin: 0rem;
+        }
+        
+        .contactUsBox .phone {
+            font-size: small;
+            margin: 0rem;
+        }
+        
+        .contactUsBox .email {
+            font-size: small;
+            margin: 0rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contactUsBox .button {
+            font-size: small;
+            text-align: center;
+            margin-top: 2rem;
+            margin-left: 0rem;
+            width: 10rem;
+            height: 3rem;
+        }
+
+  } 
+
+
+  @media only screen and (max-width: 700px) and (min-width: 600px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        height: auto;
+    }
+
+        .iconContactUs {
+            margin-left: 0rem;
+            font-size: larger;
+        }
+
+        .contactUsBox .address {
+            font-size: small;
+            margin: 0rem;
+        }
+        
+        .contactUsBox .email {
+            margin-bottom: 1rem;
+        }
+        
+        .contactUsBox .button {
+            font-size: xx-small;
+            margin-left: 1rem;
+        }
+
+  } 
+
+  /* @media only screen and (max-height: 700px) {
+    .contactUsBox {
+        margin-top: 0rem;
+        margin-left: 0.5rem;
+        margin-bottom: 2rem;
+        width: 100%;
+        background-color: yellowgreen;
+    }
+  } */
+
+  @media only screen and (max-width: 1100px) and (min-width: 1050px) {
+    .contactUsBox {
+        width: 90%;
+    }
+    
+    .map-container div:first-child {
+        position: absolute !important;
+          height: 50vh !important;
+          width: 125%!important
+        }
+} 
+
+@media only screen and (max-width: 1050px) and (min-width: 900px) {
+    .contactUsBox {
+        width: 90%;
+    }
+    
+    .map-container div:first-child {
+        position: absolute !important;
+          height: 50vh !important;
+          width: 125%!important
+        }
+} 
+
+@media only screen and (max-width: 1200px) and (min-width: 1100px) {
+    .contactUsBox {
+        width: 90%;
+        max-height: 50%;
+        
+    }
+
+    .map-container div:first-child {
+        position: absolute !important;
+          height: 45vh !important;
+          width: 30vw!important;
+          left: -180px
+        }
 } 

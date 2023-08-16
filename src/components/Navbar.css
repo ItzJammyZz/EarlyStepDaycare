@@ -30,8 +30,10 @@
 .header .nav-menu a {
     color: rgb(24, 150, 12);
     font-weight: 300;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-shadow: 1px 1px 0 #585555, 2px 1px 0 #585555, 2px 2px 0 #585555, 2px 1px 0 #585555
+    font-family: cursive;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    /* text-shadow: 1px 1px 0 #585555, 2px 1px 0 #585555, 2px 2px 0 #585555, 2px 1px 0 #585555 */
+    text-shadow: rgb(136, 132, 132) 0px 0px 10px;
 }
 
 .header .nav-menu a[href*="about"] {
