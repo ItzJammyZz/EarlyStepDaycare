@@ -2,7 +2,7 @@ import React from 'react';
 import './Cover.css';
 
 const email = "Contact@earlystepsdaycare.co.uk";
-const subject = "Inquiry from Early Steps Daycare Website";
+const subject = "Enquiry from Early Steps Daycare Website";
 const body = "Dear Early Steps Daycare, \n\nI am interested in your daycare services and would like to schedule a visit. Please let me know your availability. \n\nThank you!";
 
 const Cover = () => {
