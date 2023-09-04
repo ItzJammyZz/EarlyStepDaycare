@@ -1,7 +1,7 @@
 import './Gallery.css'
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import sample from './images/Test.jpg'
-import sample2 from './images/Smart.jpg'
+// import sample from './images/Test.jpg'
+// import sample2 from './images/Smart.jpg'
 
 
 import React, { useState } from 'react'

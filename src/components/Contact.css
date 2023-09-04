@@ -1,0 +1,40 @@
+.contactContent {
+    display: table;
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: linear-gradient(rgb(255, 255, 255), rgb(221, 221, 221)); */
+    /* background: url('./images/baby.png') no-repeat;
+    background-size: 15%; */
+    background-color: rgba(255, 255, 255, 0.938);
+    height: 15vh;
+    width: 100%;
+    min-height: 50%;
+    max-height: 100%;
+    /* border-bottom-right-radius: 80px; */
+    border-style:dotted;
+    border-color: rgb(0, 0, 0);
+}
+
+.contactContent h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.contactIcons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+    font-size: 4rem;
+}
+
+.contactIcons a {
+color: rgba(0, 0, 0, 0.897)
+}
+
+.contactIcons a:hover {
+    color: rgba(179, 179, 179, 0.486);
+}
+
+img {
+    
+}

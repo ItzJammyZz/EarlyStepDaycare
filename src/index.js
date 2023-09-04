@@ -1,42 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Cover from './components/Cover';
 import Navbar from './components/Navbar';
-import About from './components/About';
 import ErrorPage from './ErrorPage';
 import Footer from './components/Footer';
-import Jobs from './components/Jobs';
-import ContactUs from './components/ContactUs';
+import Test from './components/Test';
 import Gallery from './components/Gallery';
+import Map from './components/Map';
+import Contact from './components/Contact';
+import Vacancies from './components/Vacancies'
+
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: [<Navbar/>, <Cover/>,<Footer/>],
+    element: [<Navbar/>, <Cover/>,<Map/>,<Contact/>,<Footer/>],
     errorElement: [<Navbar/>, <ErrorPage />, <Footer/>],
-  }, {
-    path: "/about",
-    element: [<Navbar/>,<About />, <Footer/>]
-  }, 
+  },  
   {
-    path: "/jobs",
-    element: [<Navbar/>,<Jobs/>,<Footer/>]
+    path: "/about",
+    element: [<Navbar/>,<Test/>,<Contact/>,<Footer/>]
   },
+  {
+    path: "/vacancies",
+    element: [<Navbar/>,<Vacancies/>,<Contact/>,<Footer/>]
+  },
+  // {
+  //   path: "/vacancies",
+  //   element: [<Navbar/>,<Vacancies/>,<Footer/>]
+  // },
   // {
   //   path: "/gallery",
   //   element: [<Navbar/>,<Gallery/>,<Footer/>]
   // },
-  {
-    path: "/contact",
-    element: [<Navbar/>, <ContactUs/>,<Footer/>]
-  },
-  // {
-  //   path: "/",
-  //   element: [<Navbar/>, <Footer/>]
-  // }
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

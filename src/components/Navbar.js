@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-// import logo from './images/logo.PNG'
 import logo from './images/logotrans.png'
 import {Link} from 'react-scroll'
 import './Navbar.css'
@@ -29,14 +28,11 @@ const closeMenu = () => setClick(false)
                  <a href='/about'><strong>About Us</strong></a>
                 </li>
                 <li className='nav-item'>
-                 <a href='/jobs'><strong>Jobs</strong></a>
+                 <a href='/vacancies'><strong>Vacancies</strong></a>
                 </li>
                 {/* <li className='nav-item'>
                  <a href='/gallery'><strong>Gallery</strong></a>
                 </li> */}
-                <li className='nav-item'>
-                 <a href='/contact'><strong>Contact Us</strong></a>
-                </li>
 
 
                 {/* <li className='nav-item'>

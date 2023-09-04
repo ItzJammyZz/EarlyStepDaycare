@@ -1,75 +1,117 @@
-.cover {
-    background-color: var(--overlay);
-    color: #fff;
-    height: 100vh;
-    width: 100%;
-    position: relative;
+.contentHome {
+    display: table;
+    /* background-color: rgba(255, 255, 255, 0.95); */
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: 5vw;
+    height: 70vh;
+    width: 90vw;
+    min-height: 50%;
+    max-height: 100%;
+
 }
 
-.cover:before {
-    content: '';
-    background: url('./images/OptB.jpg') no-repeat center center/cover;
-    height: 100%;
-    width: 100%;
-    background-size: 2000px 1500px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-.cover .content {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 800px;
-    margin:auto;
-    padding: 1rem;
-}
-
-.cover .content p:first-child {
-    font-style: italic;
-    font-size: 1.7rem;
+.contentHome p:first-child {
+    display:inline-flexbox;
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.932);
     text-align: center;
-    margin-bottom: 0rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
-.cover .content p:nth-child(2) {
-    font-size: 3.9rem;
+.contentHome p:nth-child(2) {
+    display:inline-flexbox;
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.932);
     text-align: center;
-    margin-bottom: 0rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
 }
 
-.cover .content p:nth-child(3) {
-    font-size: 3.9rem;
+.contentHome p:nth-child(3) {
+    display:inline-flexbox;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    color: rgba(255, 255, 255, 0.952);
     text-align: center;
-    margin-bottom: 3rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
 }
 
-.cover .content p:nth-child(4) {
-    font-style: oblique;
+.contentHome p:nth-child(5) {
+    display:inline-flexbox;
+    font-size:  1.5rem;
+    margin-top: 3rem;
+    color: rgba(255, 255, 255, 0.952);
     text-align: center;
-    font-size: smaller;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
 }
 
-.cover .button {
+.contentHome p:nth-child(6) {
+    display:inline-flexbox;
+    font-size:  2rem;
+    margin-top: 1rem;
+    color: rgba(255, 255, 255, 0.952);
     text-align: center;
-    margin-left: 30%;
-    margin-top: 5%;
-    width: 300px;
-    background-color: /* var(--secondary-color) */ rgb(24, 150, 12);
-    border: 1px solid /* var(--secondary-color) */ white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+/* .contentHome p:nth-child(7) {
+    display:inline-flexbox;
+    font-size:  2rem;
+    margin-top: 0.5rem;
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+} */
+
+.contentHome p:nth-child(7) {
+    display:inline-flexbox;
+    font-size:  2rem;
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+.contentHome p:nth-child(8) {
+    display:inline-flexbox;
+    font-size:  2rem;
+
+    color: rgba(255, 255, 255, 0.952);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+.buttonHome {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.contentHome .button {
+    padding: 10px 50px;
+    font-size: 1.2rem;
     color: #ffffff;
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-color: rgb(72, 75, 75);
+    border: solid 2px;
+    text-transform: capitalize;
 }
 
-/* 0, 30, 255 */
-.cover .button:hover {
-    background-color: /* var(--secondary-dark) */ rgb(14, 75, 5);
-    border: 1px solid /* var(--secondary-dark) */ rgb(125, 118, 118);
+.contentHome .button:hover {
+    color: #ffffff;
+    border-color: rgb(72, 75, 75);
+    border: solid 2px;
+    background-color: rgb(75, 75, 75);
 }
 
-@media screen and (max-width:940px) {
+
+/* @media screen and (max-width:940px) {
     .cover .content p:nth-child(1) {
         font-size: 0.8rem;
         margin-bottom: 0.3rem;
@@ -93,10 +135,10 @@
     }
 
     
-}
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 815px) {
+/* @media only screen and (min-width: 815px) {
     .cover .button {
         width:300px;
     }
@@ -115,4 +157,4 @@
         width:150px;
     }
 
-}
+} */

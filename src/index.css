@@ -7,6 +7,22 @@
   
 }
 
+body {
+  min-height: 100%;
+  background: url('./components/images/OptB.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+     background-image: url('./components/images/OptB.jpg');
+  }
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -58,8 +74,31 @@ a {
 
 .line {
   display: block;
-  width: 40px;
+  width: 8%;
   height: 3px;
   margin: 5px auto;
   background-color: var(--primary-color);
 }
+
+.line2 {
+  display: block;
+  width: 80%;
+  height: 2px;
+  margin: 10px auto;
+  background-color:  rgba(0, 0, 0, 0.212);
+}
+
+.line3 {
+  display: block;
+  border-style:inset;
+  width: 40%;
+  height: 5px;
+  margin: 10px auto;
+  background-color:  rgba(15, 15, 15, 0.137);
+}
+
+.errorwarn {
+  display: inline-block;
+  background-color: rgba(255, 255, 0, 0.781);
+}
+

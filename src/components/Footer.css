@@ -1,56 +1,58 @@
 .Footer {
-    /* height: 0vh; */
-    height: 5rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 0rem;
-    align-items: center; 
-    background-color: rgb(214, 210, 210, 0.9);
-    z-index: 100;
-    justify-content:space-between
-  }
+  display: table;
+  background-color: rgba(255, 255, 255, 0.95);
+  bottom: 0;
+  height: 1vh;
+  width: 100%;
+  min-height: 50%;
+  max-height: 100%;
+}
+
+
+.SecuritySeal{
+  display: inline-block;
+  text-align: right;
+}
+
+.SecuritySeal img {
+  height: 40px;
+  margin-left: 5%;
+}
 
   .Footer-col2 p {
+    display: table-cell;
     color: rgb(0, 0, 0);
     font-weight: 100;
-    margin-left: 3rem;
   }
 
   .creator {
+    display: table-cell;
     color: rgb(0, 0, 0);
-    margin-right: 2rem;
     font-weight: 300;
-    text-align: center;
+    text-align: right;
   }
 
-  .creator h6 {
-    font-style: bold;
-    font-weight: 800;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
 
   .Footer_Icon {
-display: flex;
-flex-direction: column;
+/* display: inline-block; */
+display:grid;
+text-align: right;
+margin-right: 5rem;
   }
 
   .Footer_Icon a {
     color: rgb(0, 0, 0);
-    border-bottom: solid black 0.25px;
-    font-size: large;
+    font-size: x-large;
     opacity: 0.7;
     margin-bottom: 1rem;
     margin-top: 1rem;
   }
 
-.Footer_Icon p{
-    color: white;
-    font-size: medium;
+  .Footer_Icon a:hover {
+    color: rgb(143, 142, 142);
+  }
 
-}
-
-@media screen and (max-width:2100px) {
+/* @media screen and (max-width:2100px) {
   .Footer {
     height: 15vh;
   }
@@ -58,22 +60,16 @@ flex-direction: column;
   .Footer_Icon a {
     font-size: large;
   }
-  /* .Footer-col2 p {
-    font-size: large;
-  } */
   .creator {
     font-size: large;
     margin-right: 2rem;
     text-align: center;
   }
   
-}
+} */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {
-  .Footer {
-    /* height: 36vh; */
-  }
+/* @media only screen and (max-width: 900px) {
   .creator {
     font-size: medium;
     margin-right: 2rem;
@@ -85,16 +81,15 @@ flex-direction: column;
   .Footer-col2 p {
     font-size: medium;
   }
-} 
+}  */
 
-
+/* 
 @media only screen and (max-width: 500px) {
   .Footer {
    height: 100%;
   }
   .creator {
     font-size: small;
-    /* text-align: center; */
     margin-bottom: 1rem;
   }
   .Footer_Icon a {
@@ -105,6 +100,6 @@ flex-direction: column;
     margin-left: 0rem;
     margin-bottom: 1rem;
   }
-} 
+}  */
 
 

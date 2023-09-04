@@ -1,0 +1,62 @@
+/* 
+// This is About Us Page, I will change the file name later but for now, know that this is About Us Page.
+*/
+
+
+
+/* .wrapper:before {
+    content: '';
+    background: url('./images/OptB.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    background-size: 2000px 1500px;
+    background-size:cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;} */
+
+.content {
+    display: table;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: 5vw;
+    height: 70vh;
+    width: 90vw;
+    min-height: 50%;
+    max-height: 100%;
+    border-bottom-right-radius: 80px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.title {
+    display: table-header-group;
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.subtitle1 {
+    /* display: table-row; */
+    display:inline-flexbox;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.subtitle2 {
+    /* display: table-cell; */
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.title h2 {
+    margin-top: 2rem;
+}
