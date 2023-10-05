@@ -102,3 +102,8 @@ a {
   background-color: rgba(255, 255, 0, 0.781);
 }
 
+.linebreak {
+  display: block;
+  margin-top: 0.5rem;
+}
+

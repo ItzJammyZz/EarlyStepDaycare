@@ -1,4 +1,4 @@
-.contentVac {
+/* .contentVac {
     display: table;
     background-color: rgba(255, 255, 255, 0.95);
     margin-top: 7rem;
@@ -6,45 +6,66 @@
     margin-left: 5vw;
     height: 60vh;
     width: 90vw;
-    min-height: 50%;
+    min-height: 60%;
     max-height: 100%;
     border-bottom-right-radius: 80px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.3);
 }
 
+.imageVac img {
+    display: block;
+    margin-left: -20%;
+    align-items: left;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 80vh;
+    width: 80vw;
+  }
+
 .titleVac {
-    display: table-header-group;
+    display: block;
     text-align: center;
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.subtitle1Vac {
-    /* display: table-row; */
+.subtitleTitle {
     display:inline-flexbox;
     color: rgb(0, 0, 0);
+    font-size: x-large;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-}
+    margin-bottom: 2rem;
+} */
 
-.titleVac h2 {
+
+/* .subtitle1Vac {
+    display:inline-flexbox;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+} */
+
+/* .titleVac h2 {
     margin-top: 2rem;
 }
 
 .subtitle2Vac {
-    /* display: table-row; */
     display:inline-flexbox;
     margin-top: 2rem;
     color: rgb(0, 0, 0);
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-}
+} */
 
-.vacBut {
+/* .buttonHome {
     display:inline-flexbox;
     margin-top: 3rem;
     text-align: center;
@@ -53,4 +74,45 @@
 .buttonVac {
     width: 10rem;
     height: 4rem;
+} */
+
+
+.contentVac {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    margin-left: 5vw;
+    height: 120vh;
+    width: 90vw;
+    min-height: 60%;
+    max-height: 100%;
+    border-bottom-right-radius: 80px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .imageVac img {
+    margin-left: 5%;
+    width: 75%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire div */
+  }
+
+  .titleVac {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .textVac {
+    flex: 1;
+    padding: 10px; /* Adjust padding as needed */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+ .buttonHome {
+    display:inline-flexbox;
+    margin-top: 3rem;
+    text-align: center;
 }
+  

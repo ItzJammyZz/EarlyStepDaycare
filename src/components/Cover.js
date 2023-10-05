@@ -9,7 +9,7 @@ const Cover = () => {
   return (
       <div className='contentHome'>
         <p>Welcome to </p>
-        <p>Early Step Daycare</p>
+        <p>Early Steps Daycare</p>
         {/* <p>Daycare</p> */}
         <p>For any questions or enquiries, please email us below</p>
         <div className='buttonHome'><a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className='button'>Get in touch</a></div>

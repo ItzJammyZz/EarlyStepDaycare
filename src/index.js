@@ -11,6 +11,7 @@ import Gallery from './components/Gallery';
 import Map from './components/Map';
 import Contact from './components/Contact';
 import Vacancies from './components/Vacancies'
+import News from './components/News';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
     element: [<Navbar/>, <Cover/>,<Map/>,<Contact/>,<Footer/>],
     errorElement: [<Navbar/>, <ErrorPage />, <Footer/>],
   },  
+  {
+    path: "/news",
+    element: [<Navbar/>,<News/>,<Contact/>,<Footer/>]
+  },
   {
     path: "/about",
     element: [<Navbar/>,<Test/>,<Contact/>,<Footer/>]
