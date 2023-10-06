@@ -83,9 +83,9 @@
     margin-top: 7rem;
     margin-bottom: 2rem;
     margin-left: 5vw;
-    height: 120vh;
+    height: 100%;
     width: 90vw;
-    min-height: 60%;
+    min-height: 80%;
     max-height: 100%;
     border-bottom-right-radius: 80px;
     border-style: solid;
@@ -93,8 +93,10 @@
   }
   
   .imageVac img {
+    padding-top: 15%;
     margin-left: 5%;
-    width: 75%; /* Adjust the width as needed */
+    width: 70%; /* Adjust the width as needed */
+    max-width: 100%;
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the entire div */
   }
@@ -106,13 +108,35 @@
   
   .textVac {
     flex: 1;
-    padding: 10px; /* Adjust padding as needed */
+    margin-right: 2%;
     font-family: 'Times New Roman', Times, serif;
+    word-wrap: break-word;
+    font-size: large;
   }
   
+
+  
  .buttonHome {
-    display:inline-flexbox;
-    margin-top: 3rem;
+    display:flexbox;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
+
+/* Media query for screens less than 1000px wide */
+@media (max-width: 1000px) {
+    .contentVac {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center items horizontally */
+    }
   
+    .imageVac {
+      margin-bottom: 20px; /* Add spacing between image and text */
+      margin-left: 15%;
+      margin-right: auto;
+    }
+
+    .textVac {
+        text-align: center;
+    }
+  }
