@@ -1,4 +1,4 @@
-.Footer {
+/* .Footer {
   display: table;
   background-color: rgba(255, 255, 255, 0.95);
   bottom: 0;
@@ -6,24 +6,24 @@
   width: 100%;
   min-height: 50%;
   max-height: 100%;
-}
+} */
 
 
-.SecuritySeal{
+/* .SecuritySeal{
   display: inline-block;
   text-align: right;
-}
+} */
 
-.SecuritySeal img {
+/* .SecuritySeal img {
   height: 40px;
   margin-left: 5%;
-}
+} */
 
-  .Footer-col2 p {
+  /* .Footer-col2 p {
     display: table-cell;
     color: rgb(0, 0, 0);
     font-weight: 100;
-  }
+  } */
 
   .creator {
     display: table-cell;
@@ -52,54 +52,40 @@ margin-right: 5rem;
     color: rgb(143, 142, 142);
   }
 
-/* @media screen and (max-width:2100px) {
-  .Footer {
-    height: 15vh;
-  }
 
-  .Footer_Icon a {
-    font-size: large;
-  }
-  .creator {
-    font-size: large;
-    margin-right: 2rem;
-    text-align: center;
+  .Footer {
+    display: flex; /* Change to flex container */
+    justify-content: space-between;
+    align-items: center; /* Align children vertically */
+    background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 50%;
+    max-height: 100%;
   }
   
-} */
+  .Footer-col2 {
+    display: flex; /* Nested flex container */
+    flex-direction: column; /* Arrange children vertically */
+  }
+  
+.ofsteadApproval img {
+  height: 80px;
+}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (max-width: 900px) {
-  .creator {
-    font-size: medium;
-    margin-right: 2rem;
-    text-align: center;
-  }
-  .Footer_Icon a {
-    font-size: xx-large;
-  }
-  .Footer-col2 p {
-    font-size: medium;
-  }
-}  */
+.ofsteadApproval {
+  width: 25%;
+}
 
-/* 
-@media only screen and (max-width: 500px) {
-  .Footer {
-   height: 100%;
-  }
-  .creator {
-    font-size: small;
-    margin-bottom: 1rem;
-  }
-  .Footer_Icon a {
-    font-size: small;
-  }
-  .Footer-col2 p {
-    font-size: small;
-    margin-left: 0rem;
-    margin-bottom: 1rem;
-  }
-}  */
 
+
+@media (min-width: 300px) and (max-width: 800px) {
+/* For mobile optimization, having icon underneath the text instead of shifted to the left */
+  .Footer_Icon {
+display:grid;
+text-align: right;
+margin-right: 1rem;
+  }
+}
 

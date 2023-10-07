@@ -1,14 +1,21 @@
+.mainNews {
+height: auto;
+width: auto;
+margin-top: 10%;
+}
+
 .contentNews {
     display: table;
     background-color: rgba(255, 255, 255, 0.95);
-    margin-top: 7rem;
     margin-bottom: 2rem;
-    margin-left: 5vw;
-    height: 60vh;
-    width: 90vw;
+    margin-left: auto; 
+    margin-right: auto;
+    height: auto;
+    width: 80%;
     min-height: 50%;
     max-height: 100%;
-    border-bottom-right-radius: 80px;
+    /* border-bottom-right-radius: 80px; */
+    border-radius: 10px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.3);
 }
@@ -23,7 +30,7 @@
 .subtitleTitleNews {
     display:inline-flexbox;
     color: rgb(0, 0, 0);
-    font-size: x-large;
+    /* font-size: x-large; */
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
@@ -50,4 +57,10 @@
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+    .mainNews {
+        margin-top: 25%;
+        }
 }

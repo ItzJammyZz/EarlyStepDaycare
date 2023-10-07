@@ -29,26 +29,8 @@
 
 .header .nav-menu a {
     color: rgb(0, 0, 0);
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
-    /* font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family:serif;
 }
-
-/* .header .nav-menu a[href*="about"] {
-  color: rgb(0, 30, 255);
-}
-
-.header .nav-menu a[href*="/jobs"] {
-  color: rgb(238, 40, 40);
-}
-
-.header .nav-menu a[href*="/gallery"] {
-  color: rgb(200, 0, 255);
-}
-
-.header .nav-menu a[href*="/contact"] {
-  color: rgb(238, 244, 69);
-} */
 
 .header .nav-menu {
     display: flex;

@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Footer.css";
-import {FaDesktop} from 'react-icons/fa'
-import {FaKeyboard} from 'react-icons/fa'
-import {FaLaptop} from 'react-icons/fa'
 import {FaMouse} from 'react-icons/fa'
+import OffstedApr from './images/ofstedApr.jpeg'
 
 function Footer() {
 
@@ -14,6 +12,7 @@ function Footer() {
                 </p>
             </div>
             <div className='SecuritySeal'><span id="siteseal"></span></div>
+            <div className='ofsteadApproval'><img src={OffstedApr} alt='Ofsted Logo' /></div>
             <div className='creator'>
                 Webdesign Jameel Anwar
             <div className='Footer_Icon'>
