@@ -10,9 +10,9 @@ const Test = () => {
     <div className='wrapper'>
         <div className='content'>
             <div className='title'><h2>About Us</h2><span className='line'></span></div>
-            <div className='subtitle1'>Early Steps Daycare is a new nursery looking to open its doors before August 2023 (pending Ofsted registration).</div>
+            <div className='subtitle1'>Early Steps Daycare is a new nursery taking in children aged 2 - 5 years. </div>
             <span className='linebreak'></span>
-            <div className='subtitle1'>Its founders are two loving parents (Aqeel, a qualified primary school teacher and Imrose, a qualified social worker) with a strong passion for childcare, rooted in their respective experience in education and social services.</div>
+            <div className='subtitle1'>Its founders are two loving parents (a qualified primary school teacher and a qualified social worker) with a strong passion for childcare, rooted in their respective experience in education and social services.</div>
             <span className='linebreak'></span>
             <div className='subtitle1'>Although in its infancy, Early Steps’ values are rooted in its commitment to providing a comprehensive childcare service for parents and guardians, utilising the breadth of knowledge and experience gained from working within the education sector as well as working with children.</div>
             <span className='linebreak'></span>
@@ -33,3 +33,4 @@ const Test = () => {
 }
 
 export default Test;
+
