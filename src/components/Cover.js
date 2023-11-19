@@ -18,7 +18,6 @@ const Cover = () => {
     </Helmet>
         <p>Welcome to </p>
         <h1>Early Steps Daycare</h1>
-        {/* <p>Daycare</p> */}
         <p>For any questions or enquiries, please email us below</p>
         <div className='buttonHome'><a href={`mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`} className='button'>Get in touch</a></div>
         <p>Arrange A Visit</p>

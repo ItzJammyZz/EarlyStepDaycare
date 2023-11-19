@@ -2,28 +2,23 @@
     display: table;
     /* background-color: rgba(255, 255, 255, 0.95); */
     margin-top: 7rem;
-    margin-bottom: 2rem;
-    margin-left: 5vw;
-    height: 70vh;
-    width: 90vw;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60vh;
+    width: 100%;
     min-height: 50%;
     max-height: 100%;
-
+    background-color: rgba(255, 255, 255, 0.951);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
 }
 
 .contentHome p:first-child, h1 {
     display:inline-flexbox;
     font-size: 4rem;
-    color: rgba(255, 255, 255, 0.932);
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 600;
-}
-
-.contentHome p:nth-child(2) {
-    display:inline-flexbox;
-    font-size: 5rem;
-    color: rgba(255, 255, 255, 0.932);
+    color: rgba(0, 0, 0, 0.932);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 600;
@@ -33,7 +28,7 @@
     display:inline-flexbox;
     font-size: 1.5rem;
     margin-top: 4rem;
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(0, 0, 0, 0.952);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
@@ -43,7 +38,7 @@
     display:inline-flexbox;
     font-size:  1.5rem;
     margin-top: 3rem;
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(0, 0, 0, 0.952);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
@@ -53,26 +48,16 @@
     display:inline-flexbox;
     font-size:  2rem;
     margin-top: 1rem;
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(0, 0, 0, 0.952);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
 }
 
-/* .contentHome p:nth-child(7) {
-    display:inline-flexbox;
-    font-size:  2rem;
-    margin-top: 0.5rem;
-    color: rgba(255, 255, 255, 0.952);
-    text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 900;
-} */
-
 .contentHome p:nth-child(7) {
     display:inline-flexbox;
     font-size:  2rem;
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(0, 0, 0, 0.952);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;
@@ -80,8 +65,7 @@
 .contentHome p:nth-child(8) {
     display:inline-flexbox;
     font-size:  2rem;
-
-    color: rgba(255, 255, 255, 0.952);
+    color: rgba(0, 0, 0, 0.952);
     text-align: center;
     font-family:'Times New Roman', Times, serif;
     font-weight: 900;

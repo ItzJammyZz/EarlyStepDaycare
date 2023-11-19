@@ -64,7 +64,7 @@ margin-right: 5%;
     width: 100%;
     min-height: 50%;
     max-height: 100%;
-    font-size: medium;
+    font-size: small;
   }
   
   .Footer-col2 {
@@ -87,7 +87,7 @@ margin-right: 5%;
   .Footer_Icon {
 display:grid;
 text-align: right;
-margin-right: 1rem;
+margin-right: 2rem;
   }
 }
 
