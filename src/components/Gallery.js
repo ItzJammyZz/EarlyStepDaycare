@@ -4,6 +4,7 @@ import {FaTimesCircle} from 'react-icons/fa'
 import {FaChevronCircleLeft} from 'react-icons/fa'
 import {FaChevronCircleRight} from 'react-icons/fa'
 import React, { useState } from 'react'
+import { Helmet } from 'react-helmet-async';
 
 // Import all images from the directory
 const importedImages = require.context('./images/gallery/', false, /\.(JPG|jpeg|png|)$/);
@@ -44,12 +45,19 @@ const Gallery = () => {
 
 
       <div className='gallery' id='gallery'>
+            <Helmet>
+    <title>Early Steps Daycare - Gallery</title>
+    <meta name='description' content='To see what our Early Steps Daycare look like, please view our gallery.'/>
+    <meta name='keyword' content='Daycare, Gallery, Nursery, Childcare, Whitechapel, Tower Hamlet, Ofsted-approve' />
+    <link rel='canonical' href='/gallery' />
+    <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=fUuf6Y5hGO8tnKuts6q3Kbet3if2pR8N8doaKQ7B1Fq9FdUyz9VMlVeFmOlB"></script>
+    </Helmet>
 
         {data.img &&
             <div className='backgroundGal'>
             <button className='closeGal' onClick={()=> imgAction()} style={{position: 'absolute', top: '10px', right: '10px'}}><FaTimesCircle/></button>
             <button className='prevGal' onClick={()=> imgAction('prev-img')}><FaChevronCircleLeft/></button>    
-            <img className='imgGal' src={data.img } style={{width: 'auto', maxWidth: '100%', maxHeight:'100%'}} />
+            <img className='imgGal' src={data.img } style={{width: 'auto', maxWidth: '100%', maxHeight:'100%'}} alt='Pictures'/>
             <button className='forwGal' onClick={()=> imgAction('next-img')}><FaChevronCircleRight/></button>
             </div>
         }

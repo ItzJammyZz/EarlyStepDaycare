@@ -1,6 +1,7 @@
 import React from 'react';
 import './Vacancies.css';
 import IVac from './images/Lvl3Practv2.jpeg';
+import { Helmet } from 'react-helmet-async';
 
 const email = "Contact@earlystepsdaycare.co.uk";
 const subject = "Vacancy from Early Steps Daycare Website";
@@ -10,6 +11,13 @@ function Vacancies() {
   
   return (
     <div className='contentVac'>
+            <Helmet>
+    <title>Early Steps Daycare - Vacancies</title>
+    <meta name='description' content='We are currently looking to fill in vacancies at our Early Steps Daycare.'/>
+    <meta name='keyword' content='Vacancies, Jobs, Childcare Practitioners, Daycare, Nursery, Childcare, Whitechapel, Tower Hamlet, Ofsted-approve' />
+    <link rel='canonical' href='/vacancies' />
+    <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=fUuf6Y5hGO8tnKuts6q3Kbet3if2pR8N8doaKQ7B1Fq9FdUyz9VMlVeFmOlB"></script>
+      </Helmet>
       <div className='imageVac'>
         <img src={IVac} alt='Vacancies' />
       </div>

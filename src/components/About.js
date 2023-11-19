@@ -1,9 +1,11 @@
 import React from 'react'
 import './About.css'
 // import ImgAbout from './images/Smart.jpg'
+import { Helmet } from 'react-helmet-async'
 
 const About = () => {
   return (
+    
     <div className='about' id='about'>
       <div className='innertitleAbout'>
     About Us

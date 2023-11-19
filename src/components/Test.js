@@ -2,12 +2,21 @@
 
 import React from 'react'
 import './Test.css'
-// import ImgAbout from './images/Smart.jpg'
 import VideoPlayer from './videoPlayer'
+import { Helmet } from 'react-helmet-async';
 
 const Test = () => {
   return (
     <div className='wrapper'>
+
+      <Helmet>
+    <title>Early Steps Daycare - About Us</title>
+    <meta name='description' content='To learn more about us and our team in Early Steps Daycare.'/>
+    <meta name='keyword' content='About Us, Daycare, Nursery, Childcare, Whitechapel, Tower Hamlet, Ofsted-approve' />
+    <link rel='canonical' href='/about' />
+    <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=fUuf6Y5hGO8tnKuts6q3Kbet3if2pR8N8doaKQ7B1Fq9FdUyz9VMlVeFmOlB"></script>
+      </Helmet>
+
         <div className='content'>
             <div className='title'><h2>About Us</h2><span className='line'></span></div>
             <div className='subtitle1'>Early Steps Daycare is a new nursery taking in children aged 2 - 5 years. </div>

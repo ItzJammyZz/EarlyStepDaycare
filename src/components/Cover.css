@@ -11,7 +11,7 @@
 
 }
 
-.contentHome p:first-child {
+.contentHome p:first-child, h1 {
     display:inline-flexbox;
     font-size: 4rem;
     color: rgba(255, 255, 255, 0.932);

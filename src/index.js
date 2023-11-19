@@ -12,6 +12,7 @@ import Map from './components/Map';
 import Contact from './components/Contact';
 import Vacancies from './components/Vacancies'
 import News from './components/News';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 const router = createBrowserRouter([
@@ -41,7 +42,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <HelmetProvider>
     <RouterProvider router={router} />
+    </HelmetProvider>
   </React.StrictMode>
 );
 
