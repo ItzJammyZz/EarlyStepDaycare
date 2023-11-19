@@ -24,7 +24,7 @@ export default function ErrorPage() {
       <p> <span className="errorwarn"><strong>Error:</strong>
         <i> {error.statusText || error.message}</i></span>
       </p>
-      <p>Please click on Home at top to direct to the right page.</p>
+      <p>Please click on Home to redirect back to the home page.</p>
     </div>
   );
 }
