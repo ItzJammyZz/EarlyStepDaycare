@@ -9,7 +9,7 @@
 
 body {
   min-height: 100%;
-  background: url('./components/images/OptB.jpg');
+  /* background: url('./components/images/OptC.JPG'); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -17,9 +17,9 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  body {
+  /* body {
      background-image: url('./components/images/OptB.jpg');
-  }
+  } */
 }
 
 

@@ -10,17 +10,32 @@
     
     .hide {
     display: none;
+    visibility: hidden;
     }
+
+.Alert {
+    font-size: larger;
+    font-weight: 700;
+}
 
 .popUp button {
 padding: 15px;
 margin-left: 250px;
 margin-top: 20px;
-background-color:goldenrod;
+background-color:rgb(2, 2, 2);
 font-size: large;
 color:aliceblue;
 
 }
+
+.imageBanner img {
+    /* padding-top: 15%; */
+    margin-left: 5%;
+    width: 90%; /* Adjust the width as needed */
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire div */
+  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
