@@ -16,7 +16,7 @@ function Footer() {
             <div className='creator'>
                 Webdesign Jameel Anwar
             <div className='Footer_Icon'>
-            <a href='http://www.jameelanwar.tech'>< FaMouse/></a>
+            <a href='http://www.jameelanwar.tech' target='_blank' rel='nofollow' alt='Developer Website'>< FaMouse/></a>
             </div>
             </div>
         </div>
